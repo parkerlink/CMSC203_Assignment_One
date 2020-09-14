@@ -49,6 +49,27 @@ public class Parker_Link_Assignment_One {
            	 System.out.println("Invalid input, please try again. (yes or no)");
             }   	
         }
+		
+	    isValidInput = false;
+	    
+	    //Moves to the fourth step
+	    System.out.println("Third step: make sure the cables to your router are plugged in firmly and your router is getting power ");
+	    
+	    while(isValidInput == false) {
+	    	
+	   	 System.out.println("Are you able to connect with the internet? (yes or no)");
+	   	 userInput = sc.nextLine(); 
+	
+	   	 if(userInput.equals("yes")) { //Checks to see if the user fixed their problem
+	   		 System.out.println("Checking the cables seemed to work");
+	   		 return;
+	        }else if(userInput.equals("no")){
+	       	 isValidInput = true;
+	        }else {
+	       	 System.out.println("Invalid input, please try again. (yes or no)");
+	        }   	
+	    }
+		
   	    isValidInput = false;
 	    
 	    //Moves to the fourth step
